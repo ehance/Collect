@@ -1,29 +1,50 @@
-<p>
+ <!-- <p>
 statement works!
-</p>
+</p> -->
+<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
+ <header class="mdl-layout__header mdl-color-text--white mdl-color--light-blue-700">
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
+      <div class="mdl-layout__header-row mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+        <h3><i class="material-icons">assignment_late</i> Collect</h3>
+      </div>
+      </div>
+  </header>
+  
 <main class="mdl-layout__content mdl-color--grey-100">
     <div id="messages-card-container" class="mdl-cell mdl-cell--12-col mdl-grid">
 
       <!-- Messages container -->
       <div id="messages-card" class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--6-col-tablet mdl-cell--6-col-desktop">
         <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+          <ul class="demo-list-item mdl-list">
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                <B>Account #</B>:  SS80102
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                <B>Name</B>:  Chris Taddei
+              </span>
+            </li>
+            <li class="mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                  <B>Amount Due</B>:  $99,901
+              </span>
+            </li>
+          </ul>
           <div id="messages">
             <span id="message-filler"></span>
           </div>
           <form id="message-form" action="#">
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-              <input class="mdl-textfield__input" type="text" id="message">
-              <label class="mdl-textfield__label" for="message">Message...</label>
-            </div>
-            <button id="submit" disabled type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-              Send
+            <button id="submit" type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+              Schedule Payment
             </button>
           </form>
           <form id="image-form" action="#">
-            <input id="mediaCapture" type="file" accept="image/*" capture="camera">
-            <button id="submitImage" title="Add an image" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--amber-400 mdl-color-text--white">
-              <i class="material-icons">image</i>
+              <button id="submitImage" type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+              <i class="material-icons">chat_bubble_outline</i>
             </button>
           </form>
         </div>
@@ -36,3 +57,4 @@ statement works!
 
     </div>
   </main>
+  </div>
